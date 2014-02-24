@@ -4,15 +4,23 @@
 	<meta charset="UTF-8">
 	<title>Index</title>
 	<style>
-		table, th, td
-		{
-			border-collapse:collapse;
-			border:1px solid black;
-		}
-		th, td
-		{
-			padding:5px;
-		}
+	table, td
+	{
+		border-collapse:collapse;
+		border:1px solid black;
+	}
+	th, td
+	{
+		padding:5px;
+	}
+	fieldset
+	{
+		width:250px;
+	}
+	input
+	{
+		font-family: monospace;
+	}
 	</style>
 </head>
 <body>
@@ -24,13 +32,13 @@
 	<h3>Lata:</h3>
 	<dl>
 		<dt>1998-2004</dt>
-			<dd>Podstawówka nr 10 w Sopocie</dd>
+		<dd>Podstawówka nr 10 w Sopocie</dd>
 		<dt>2004-2007</dt>
-			<dd>Gimnazjum nr 3 w Sopocie</dd>
+		<dd>Gimnazjum nr 3 w Sopocie</dd>
 		<dt>2007-2010</dt>
-			<dd>Liceum w Sopocie</dd>
+		<dd>Liceum w Sopocie</dd>
 		<dt>2010- </dt>
-			<dd>Uniwersytet Gdański</dd>
+		<dd>Uniwersytet Gdański</dd>
 	</dl>
 
 	<h3>Zainteresowania</h3>
@@ -69,23 +77,23 @@
 			<th>symbol</th>
 		</tr>
 		<tr>
-			<td>& lt;</td>
+			<td>&amp;lt;</td>
 			<td>&lt;</td>
 		</tr>
 		<tr>
-			<td>& gt;</td>
+			<td>&amp;gt;</td>
 			<td>&gt;</td>
 		</tr>
 		<tr>
-			<td>& amp;</td>
+			<td>&amp;amp;</td>
 			<td>&amp;</td>
 		</tr>
 		<tr>
-			<td>& copy;</td>
+			<td>&amp;copy;</td>
 			<td>&copy;</td>
 		</tr>
 		<tr>
-			<td>& reg;</td>
+			<td>&amp;reg;</td>
 			<td>&reg;</td>
 		</tr>
 	</table>
@@ -111,9 +119,143 @@
 		</tr>
 	</table>
 	<br />
-	<img src="images/tygrys.jpg" alt="tygrysej">
-	<img src="images/ryba-mala.png" alt="rybka" title="Serwis Akwarystyczny" usemap="http://www.google.com">
+	
+	<img src="https://inf.ug.edu.pl/~wpawlowski/lab/TSW1/cw-html/obrazki/tygrys.jpg" alt="tygrysej">
+	<a href="http://www.google.pl"> <img src="images/ryba-mala.png" alt="rybka" title="Serwis Akwarystyczny"></a>
+	<nav>
+		<img src="images/menu.gif" alt="Menu" usemap="#menu">
+
+	</nav>
+	<map name="menu">
+		<area shape="rect" coords="61,15,112,44"  href="http://www.inf.ug.edu.pl" alt="W1" title="W1">
+		<area shape="rect" coords="120,15,175,43" href="http://www.onet.pl" alt="W2" title="W2">
+		<area shape="rect" coords="182,16,234,43" href="http://www.sport.pl" alt="W3" title="W3">
+		<area shape="rect" coords="239,16,294,44" href="http://www.trojmiasto.pl" alt="W4" title="W4">
+		<area shape="rect" coords="305,16,358,44" href="http://www.google.pl" alt="W5" title="W5">
+		<area shape="rect" coords="371,15,428,44" href="http://www.android.com.pl" alt="W6" title="W6">
+		<area shape="rect" coords="436,16,486,45" href="http://www.weszlo.com" alt="W7" title="W7">
+	</map>
 	<br /><br />
+
+	<form action="http://sigma.ug.edu.pl/~wpawlowski/utl/t1/" method="get">
+		
+		<table>
+			<tr>
+				<th>
+					Uzytkownik: 
+				</th>
+				<th>
+					<input type="text" name="uzytkownik">
+				</th>
+			</tr>
+			<tr>
+				<th>
+					Haslo: 
+				</th>
+				<th>
+					<input type="password" name="haslo">
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<input type="submit" value="Ok">
+				</th>
+				<th></th>
+			</tr>
+		</table>
+		
+	</form>
+	<br />
+
+	<form action="http://sigma.ug.edu.pl/~wpawlowski/utl/t2/" method="get">
+		<table>
+			<tr><th>
+				Data:<input type="text" name="dzien" maxlength="2" size="2">
+				<select name="miesiac">
+					<option value="1">Styczeń</option>
+					<option value="2">Luty</option>
+					<option value="3">Marzec</option>
+					<option value="4">Kwiecień</option>
+					<option value="5">Maj</option>
+					<option value="6">Czerwiec</option>
+					<option value="7">Lipiec</option>
+					<option value="8">Sierpień</option>
+					<option value="9">Wrzesień</option>
+					<option value="10">Październik</option>
+					<option value="11">Listopad</option>
+					<option value="12">Grudzien</option>
+				</select>
+				<input type="text" name="rok" maxlength="4" size="4">
+				<input type="submit" value="Sprawdz">
+			</th></tr>
+		</table>
+	</form>
+	<br />
+
+	<form action="http://sigma.ug.edu.pl/~wpawlowski/utl/t3/" method="POST">
+		<table>
+			<tr><th>
+				Data:<input type="text" name="dzien" maxlength="2" size="2">
+				<select name="miesiac">
+					<option value="1">Styczeń</option>
+					<option value="2">Luty</option>
+					<option value="3">Marzec</option>
+					<option value="4">Kwiecień</option>
+					<option value="5">Maj</option>
+					<option value="6">Czerwiec</option>
+					<option value="7">Lipiec</option>
+					<option value="8">Sierpień</option>
+					<option value="9">Wrzesień</option>
+					<option value="10">Październik</option>
+					<option value="11">Listopad</option>
+					<option value="12">Grudzien</option>
+				</select>
+				<input type="text" name="rok" maxlength="4" size="4">
+			</th></tr>
+			<tr><th>
+				Notatka: <br />
+				<textarea name="notatka" rows="10" cols="30"></textarea>
+				
+			</th></tr>
+			<tr><th>
+				<input type="submit" value="Zapisz">
+			</th></tr>
+		</table>
+	</form>
+	<form >
+		<table>
+			<tr>
+				<td>Imię</td>
+				<td><input type="text" class="" required></td>
+			</tr>
+			<tr>
+				<td>Nazwisko</td>
+				<td><input type="text" class="" required></td>
+			</tr>
+			<tr>
+				<td>Telefon</td>
+				<td><input type="number" class="" required></td>
+			</tr>
+			<tr>
+				<td>E-mail</td>
+				<td><input type="email" class=""></td>
+			</tr>
+			<tr>
+				<td>Url</td>
+				<td><input type="url" class=""></td>
+			</tr>
+			<tr>
+				<td>data urodzenia</td>
+				<td><input type="date" class=""></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="Zapisz">
+				</td>
+			</tr>
+		</table>
+
+	</form>
 	<a href="mailto:michalskalkowski@gmail.com">Kontakt</a>
 </body>
 </html>
