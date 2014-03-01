@@ -1,0 +1,20 @@
+body {
+  background-image: url(listki.gif);
+  background-repeat: repeat-y;
+}
+div {
+  margin-left: 3cm;
+  margin-right: 10cm;
+  border-style: solid;
+}
+p {
+  text-align: justify;
+  text-indent: 20px;
+  margin-left: 0.5cm;
+  margin-right: 0.5cm;
+}
+img {
+  float: left;
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
